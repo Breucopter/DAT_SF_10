@@ -41,7 +41,7 @@ def cleanData():
 
 
 def scoreModels(features, target, folds=10):
-    "Calcs crovs-validation scores for multiple algorithms"
+    "Calcs cross-validation scores for multiple algorithms"
     models = []
     models.append(RandomForestClassifier(random_state=0).fit)
     models.append(LogisticRegression(C=1.0).fit)
